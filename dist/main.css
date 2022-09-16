@@ -5,10 +5,10 @@
 }
 
 html, body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #FFF5F0;
     font-size: 20px;
-    width: 100%;
 }
 /* Header items */
 .header__navbar {
@@ -53,6 +53,7 @@ html, body {
 .container {
     display: grid;
     height: 60vh;
+    padding-top: 2rem;
     grid-template-columns: repeat(2,1fr);
 }
 .header__content {
@@ -68,7 +69,7 @@ html, body {
 }
 .header_text {
     padding: 30px 0;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 45px;
@@ -76,7 +77,7 @@ html, body {
 }
 .header_sub-text {
     color: #737373;
-    font-weight: 400;
+    font-weight: 500;
     size: 20px;
     line-height: 30px;
     letter-spacing: 0.2px;
@@ -89,7 +90,7 @@ html, body {
 .header__btns--bordered {
     border: 1px solid #1BA0AB;
 }
-/* button and modifiers */
+/* header buttons and modifiers */
 .btn {
     color: #1BA0AB;
     font-size: 13px !important;
@@ -108,18 +109,58 @@ html, body {
 .btn--transformed {
     font-size: 10px !important;
     display: flex;
+    place-content: center;
     text-transform: uppercase;
 } 
+.btn__icon {
+    padding-left:0.4rem;
+    margin-top: 0.1rem;
+}
 
+/* Experts Page start here*/
 
-/* Next page start here (expert page )*/
-
-.expert_page {
+.experts_page {
     background-color: white;
-    height: 70vh;
+    margin-top: 5rem;
+    padding:4rem 5px;
+    height: 85vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     place-items: center;
 }
+.experts-page__border {
+    width: 11%;
+    border-top: 0.3rem solid #E74040;
+}
+.experts-page__title {
+    font-size: 40px;
+    padding-top: 1.2rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
 
+}
+.experts-page__text {
+    font-size: 14px;
+    padding-top: 1rem;
+    font-weight: 400;
+    width: 50%;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+.experts-page__btn {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    padding: 1rem 0;
+    color: #1BA0AB;
+    display: flex;
+    place-items: center;
+}
+
+/* team Page start here*/

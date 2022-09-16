@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <title>Medical Core</title>
 </head>
@@ -27,7 +30,10 @@
             <div class="btn">Login</div>
             <div class="btn btn--colored btn--transformed">
                 <span>Join Us </span>
-                <box-icon name='right-arrow-alt' color='white'></box-icon>
+                <!-- <box-icon name='right-arrow-alt' color='white'></box-icon> -->
+                <span class="btn__icon">
+                    <img src="./images/Vector.png" alt="">
+                </span>
             </div>
         </div>
     </nav>
@@ -40,25 +46,45 @@
             <div class="btn btn--colored btn--transformed">
                 <span>Join Us </span>
             </div>
-            <div class="btn header__btns--bordered">Learn More</div>
+            <div class="btn header__btns--bordered">Learn More </div>
         </div>
         </div>
-        <div class="header__content"></div>        
+        <div class="header__cont"></div>        
     </section>
 </header>
 <main>
-    <div class="expert_page">
-      <div class="expert-page__image">
-        <img class="expert-page__img" src="./images/BENM-removebg-preview.png" alt="expert image">
+    <div class="experts_page">
+      <div class="experts-page__image">
+        <img class="experts-page__img" src="./images/1-removebg-preview.png" alt="experts image">
       </div>
-      <div class="expert-page__message">
-        <div class="expert-page__border"></div>
-        <div class="expert-page__title">Meet our Expert</div>
-        <div class="expert-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci volptatibus quam, facere et consequatur ratione.</div>
-        <div class="expert-page__btn">Load More</div>
+      <div class="experts-page__message">
+        <div class="experts-page__border"></div>
+        <div class="experts-page__title">Meet our Experts</div>
+        <div class="experts-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci volptatibus quam, facere et consequatur ratione.</div>
+        <div class="experts-page__btn">
+            <span>Load More </span>
+            <box-icon class="experts-page__icon" name='chevron-right' color="#1BA0AB" ></box-icon>
+        </div>
       </div>
     </div>
+    <!-- End of of expert page -->
+    <div class="team-page">
+       <div class="team-page__conten">
+        <div class="experts-page__title">Meet our Experts</div>
+        <div class="experts-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci volptatibus quam, facere et consequatur ratione.</div>
+        <div class="experts-page__btn">
+            <span>Load More </span>
+            <box-icon class="experts-page__icon" name='chevron-right' color="#1BA0AB" ></box-icon>
+        </div>
+       </div>
+       <div class="card">
+         cards goes here
+       </div>
+    </div>
 </main>
+<footer>
+
+</footer>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </body>
 
