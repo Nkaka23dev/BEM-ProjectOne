@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./smalldevice.css">
+    <link rel="stylesheet" href="./responsive.css">
     <title>Medical Core</title>
 </head>
 
@@ -21,8 +21,14 @@
             <div class="header__menu">
                 <!-- LOGO -->
                 <div class="header__logo">Medical Core</div>
+                 <!-- open and closing btns -->
+                 <div class="menu-btn">
+                    <box-icon name='menu'></box-icon>
+                    <!-- <box-icon type='solid' name='x-square'></box-icon> -->
+                 </div>
+                
                 <!-- Menu Items -->
-                <ul class="header__items">
+                <ul class="header__items slide">
                     <li class="header__item">
                         <a href="#" class="header__link">Home</a>
                     </li>
@@ -37,13 +43,14 @@
                     </li>
                 </ul>
             </div>
+
             <!-- Menu Buttons -->
             <div class="header__menu-btns">
                 <div class="btn">Login</div>
                 <div class="btn btn--colored btn--big">
                     <span>Join Us </span>
                     <span class="btn__icon">
-                        <img src="./images/Vector.png" alt="logoo">
+                        <img src="./images/Vector.png" alt="">
                     </span>
                 </div>
             </div>
@@ -64,27 +71,27 @@
         </section>
     </header>
     <main>
-        <div class="experts_page">
+        <section class="experts_page">
             <div class="experts-page__img-holder">
                 <img class="experts-page__img" src="./images/1-removebg-preview.png" alt="experts image">
             </div>
             <div class="experts-page__message">
                 <div class="experts-page__border"></div>
                 <div class="title">Meet our Experts</div>
-                <div class="text text--expert">Problem Trying to resolve the conflict
+                <div class="page-text page-text--left">Problem Trying to resolve the conflict
                     between The two major realms of classical physics: Newtonian mechanics.</div>
                 <div class="experts-page__btn">
                     <span>Load More </span>
                     <box-icon class="experts-page__icon" name='chevron-right' color="#1BA0AB"></box-icon>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Team page start -->
-        <div class="team-page">
+        <section class="team-page">
             <div class="team-page__content">
                 <div class="sub-title sub-title--team">Team</div>
                 <div class="title">Our Team</div>
-                <div class="text text--start">Problem Trying to resolve the conflict
+                <div class="page-text text--start">Problem Trying to resolve the conflict
                     between<br>
                     The two major realms of classical physics: Newtonian mechanics.</div>
             </div>
@@ -149,7 +156,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         </div>
     </main>
@@ -158,10 +165,10 @@
             <div class="footer-container__content">
                 <div class="sub-title sub-title--positioned">Newsletter</div>
                 <div class="title title--uppercase">Join us</div>
-                <div class="text">Problem Trying to resolve the conflict between<br>
+                <div class="page-text">Problem Trying to resolve the conflict between<br>
                     The two major realms of classical physics: Newtonian mechanics.</div>
                 <div class="form-group">
-                    <input type="text" class="form-group__input" placeholder="Your Email">
+                    <input type="page-text" class="form-group__input" placeholder="Your Email">
                     <span class="btn btn--colored btn--positioned">Subscribe</span>
                 </div>
             </div>

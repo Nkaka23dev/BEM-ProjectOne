@@ -10,7 +10,8 @@ body {
     background-color: #FFF5F0;
     overflow-x: hidden;
 }
-
+@media  all and (min-width: 989px) {
+    
 /* Header items */
 .header__navbar {
     display: flex;
@@ -18,7 +19,9 @@ body {
     gap: 5px;
     margin: 10px;
 }
-
+.menu-btn {
+    display: none;
+}
 /* header menu */
 .header__menu {
     height: 91px;
@@ -169,7 +172,7 @@ body {
     color: #252B42;
 }
 
-.text {
+.page-text {
     width: 469px;
     height: 40px;
     font-family: 'Montserrat';
@@ -196,7 +199,7 @@ body {
     top: 75rem;
 }
 
-.text--expert {
+.page-text--left {
     padding-top: 1rem;
     padding-bottom: 4rem;
     width: 50%;
@@ -360,20 +363,5 @@ body {
     top: 33px;
     right: 0;
     bottom: 0;
-}
-
-/* Media query */
-
-@media all and (max-width: 600px ) and (max-width: 800px){
-    /* Header items */
-.header__navbar {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 10px;
-}
-    
-.header__items {
-    display: none;
 }
 }
