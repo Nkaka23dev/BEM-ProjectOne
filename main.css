@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat';
+    background-color: #FFF5F0;
+    overflow-x: hidden;
+}
+@media  all and (min-width: 989px) {
+    
+/* Header items */
+.header__navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px;
+}
+.menu-btn {
+    display: none;
+}
+/* header menu */
+.header__menu {
+    height: 91px;
+    flex-grow: 6;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__items {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.header__logo {
+    font-weight: bolder;
+}
+
+.header__menu-btns {
+    height: 91px;
+    flex-grow: 4;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: start;
+    align-content: center;
+}
+
+/* Header section */
+.header__body {
+    display: grid;
+    height: 60vh;
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header__content {
+    display: grid;
+    place-content: center;
+}
+
+.sub-title {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+    color: #1BA0AB;
+}
+
+.header__text {
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    color: #252B42;
+}
+
+.header__sub-text {
+    color: #737373;
+    font-weight: 500;
+    size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.header__btns {
+    display: flex;
+    gap: 10px;
+    padding-top: 14px;
+}
+
+.btn--bordered {
+    border: 1px solid #1BA0AB;
+}
+
+/* header buttons and modifiers */
+.btn {
+    color: #1BA0AB;
+    font-size: 13px !important;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: right;
+    padding: 8px 18px;
+    border-radius: 3px;
+}
+
+.btn--colored {
+    background-color: #1BA0AB;
+    color: white;
+
+}
+
+.btn--big {
+    font-size: 10px !important;
+    display: flex;
+    place-content: center;
+    text-transform: uppercase;
+}
+
+.btn__icon {
+    padding-left: 0.4rem;
+    margin-top: 0.1rem;
+}
+
+/* Experts Page start here*/
+
+.experts-page {
+    background-color: white;
+    margin-top: 5rem;
+    padding: 4rem 5px;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: end;
+    position: relative;
+}
+
+.experts-page__message {
+    position: absolute;
+    top: 16rem;
+    right: -16rem;
+}
+
+.experts-page__border {
+    width: 11%;
+    border-top: 0.3rem solid #E74040;
+}
+
+.title {
+    font-size: 30px;
+    padding-top: 1.2rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #252B42;
+}
+
+.page-text {
+    width: 469px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.title--uppercase {
+    text-transform: uppercase;
+    padding-top: 2rem !important;
+}
+.sub-title--positioned {
+    position: absolute;
+    top: 0;
+
+}
+
+.sub-title--team {
+    position: absolute;
+    top: 79rem;
+}
+
+.page-text--left {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    width: 50%;
+    text-align: left;
+}
+
+.experts-page__btn {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 1rem 0;
+    color: #1BA0AB;
+    display: flex;
+    place-items: center;
+}
+
+.experts-page__img-holder {
+    display: flex;
+    place-items: end;
+}
+
+/* team Page start here*/
+.team-page {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.team-page__content {
+    width: 50%;
+    align-self: start;
+    margin-left: 7.6rem;
+}
+
+
+.text--start {
+    text-align: start;
+}
+
+.card-container {
+    display: grid;
+    gap: 30px;
+    padding: 4rem 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    width: 235px;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    place-items: center;
+}
+
+.card__title {
+
+    width: 127px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.card__sub-title {
+    width: 66px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.card__icons {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-container {
+    height: 60vh;
+    padding: 5rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: center;
+    place-items: center;
+}
+
+.footer-container__content {
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    place-items: center;
+    gap: 5px;
+}
+
+.footer-container__header {
+    width: 169px;
+    height: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.form-group__input {
+    margin-top: 2rem;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 40px;
+    width: 688px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.btn--positioned {
+    position: absolute;
+    top: 33px;
+    right: 0;
+    bottom: 0;
+}
+}
